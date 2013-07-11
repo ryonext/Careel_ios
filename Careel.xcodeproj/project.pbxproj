@@ -24,6 +24,9 @@
 		06F0BAE7178F005D00183A4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0BABF178F005D00183A4C /* Foundation.framework */; };
 		06F0BAEF178F005D00183A4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F0BAED178F005D00183A4C /* InfoPlist.strings */; };
 		06F0BAF2178F005D00183A4C /* CareelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0BAF1178F005D00183A4C /* CareelTests.m */; };
+		06F0BAFD178F006B00183A4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0BAFB178F006B00183A4C /* LoginViewController.m */; };
+		06F0BAFF178F01C900183A4C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0BAFE178F01C800183A4C /* Accounts.framework */; };
+		06F0BB00178F021900183A4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F0BAFB178F006B00183A4C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		06F0BAEE178F005D00183A4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06F0BAF0178F005D00183A4C /* CareelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CareelTests.h; sourceTree = "<group>"; };
 		06F0BAF1178F005D00183A4C /* CareelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CareelTests.m; sourceTree = "<group>"; };
+		06F0BAFB178F006B00183A4C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		06F0BAFC178F006B00183A4C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		06F0BAFE178F01C800183A4C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F0BAFF178F01C900183A4C /* Accounts.framework in Frameworks */,
 				06F0BABE178F005D00183A4C /* UIKit.framework in Frameworks */,
 				06F0BAC0178F005D00183A4C /* Foundation.framework in Frameworks */,
 				06F0BAC2178F005D00183A4C /* CoreGraphics.framework in Frameworks */,
@@ -90,6 +97,7 @@
 		06F0BAB1178F005D00183A4C = {
 			isa = PBXGroup;
 			children = (
+				06F0BAFE178F01C800183A4C /* Accounts.framework */,
 				06F0BAC3178F005D00183A4C /* Careel */,
 				06F0BAEA178F005D00183A4C /* CareelTests */,
 				06F0BABC178F005D00183A4C /* Frameworks */,
@@ -127,6 +135,8 @@
 				06F0BAD9178F005D00183A4C /* MasterViewController.m */,
 				06F0BADB178F005D00183A4C /* DetailViewController.h */,
 				06F0BADC178F005D00183A4C /* DetailViewController.m */,
+				06F0BAFB178F006B00183A4C /* LoginViewController.m */,
+				06F0BAFC178F006B00183A4C /* LoginViewController.h */,
 				06F0BAC4178F005D00183A4C /* Supporting Files */,
 			);
 			path = Careel;
@@ -275,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F0BB00178F021900183A4C /* LoginViewController.m in Sources */,
 				06F0BACA178F005D00183A4C /* main.m in Sources */,
 				06F0BACE178F005D00183A4C /* AppDelegate.m in Sources */,
 				06F0BADA178F005D00183A4C /* MasterViewController.m in Sources */,
@@ -287,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F0BAF2178F005D00183A4C /* CareelTests.m in Sources */,
+				06F0BAFD178F006B00183A4C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
