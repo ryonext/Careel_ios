@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064D6424179771C100BF2365 /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6423179771C100BF2365 /* TWSignedRequest.m */; };
+		064D6435179772B500BF2365 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6430179772B500BF2365 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		064D6436179772B500BF2365 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6430179772B500BF2365 /* NSData+Base64.m */; };
+		064D6437179772B500BF2365 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6432179772B500BF2365 /* OAuth+Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		064D6438179772B500BF2365 /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6432179772B500BF2365 /* OAuth+Additions.m */; };
+		064D6439179772B500BF2365 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6434179772B500BF2365 /* OAuthCore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		064D643A179772B500BF2365 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6434179772B500BF2365 /* OAuthCore.m */; };
+		064D643D179774B700BF2365 /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D643C179774B700BF2365 /* TWAPIManager.m */; };
+		064D643E179774B700BF2365 /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D643C179774B700BF2365 /* TWAPIManager.m */; };
+		064D643F179775B600BF2365 /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 064D6423179771C100BF2365 /* TWSignedRequest.m */; };
+		064D64411797772D00BF2365 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D64401797772D00BF2365 /* Social.framework */; };
+		064D64431797781D00BF2365 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D64421797781D00BF2365 /* Twitter.framework */; };
 		06F0BABE178F005D00183A4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0BABD178F005D00183A4C /* UIKit.framework */; };
 		06F0BAC0178F005D00183A4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0BABF178F005D00183A4C /* Foundation.framework */; };
 		06F0BAC2178F005D00183A4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F0BAC1178F005D00183A4C /* CoreGraphics.framework */; };
@@ -40,6 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064D6422179771C100BF2365 /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
+		064D6423179771C100BF2365 /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
+		064D642F179772B500BF2365 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		064D6430179772B500BF2365 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		064D6431179772B500BF2365 /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		064D6432179772B500BF2365 /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		064D6433179772B500BF2365 /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		064D6434179772B500BF2365 /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		064D643B179774B700BF2365 /* TWAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAPIManager.h; sourceTree = "<group>"; };
+		064D643C179774B700BF2365 /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
+		064D64401797772D00BF2365 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		064D64421797781D00BF2365 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		06F0BABA178F005D00183A4C /* Careel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F0BABD178F005D00183A4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06F0BABF178F005D00183A4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064D64431797781D00BF2365 /* Twitter.framework in Frameworks */,
+				064D64411797772D00BF2365 /* Social.framework in Frameworks */,
 				06F0BAFF178F01C900183A4C /* Accounts.framework in Frameworks */,
 				06F0BABE178F005D00183A4C /* UIKit.framework in Frameworks */,
 				06F0BAC0178F005D00183A4C /* Foundation.framework in Frameworks */,
@@ -94,11 +120,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064D64201797719000BF2365 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				064D6425179771EF00BF2365 /* ABOAuthCore */,
+				064D6421179771A900BF2365 /* ReverseAuth */,
+			);
+			name = Vendor;
+			path = Careel;
+			sourceTree = "<group>";
+		};
+		064D6421179771A900BF2365 /* ReverseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				064D643B179774B700BF2365 /* TWAPIManager.h */,
+				064D643C179774B700BF2365 /* TWAPIManager.m */,
+				064D6422179771C100BF2365 /* TWSignedRequest.h */,
+				064D6423179771C100BF2365 /* TWSignedRequest.m */,
+			);
+			name = ReverseAuth;
+			sourceTree = "<group>";
+		};
+		064D6425179771EF00BF2365 /* ABOAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				064D642F179772B500BF2365 /* NSData+Base64.h */,
+				064D6430179772B500BF2365 /* NSData+Base64.m */,
+				064D6431179772B500BF2365 /* OAuth+Additions.h */,
+				064D6432179772B500BF2365 /* OAuth+Additions.m */,
+				064D6433179772B500BF2365 /* OAuthCore.h */,
+				064D6434179772B500BF2365 /* OAuthCore.m */,
+			);
+			name = ABOAuthCore;
+			sourceTree = "<group>";
+		};
 		06F0BAB1178F005D00183A4C = {
 			isa = PBXGroup;
 			children = (
+				064D64421797781D00BF2365 /* Twitter.framework */,
+				064D64401797772D00BF2365 /* Social.framework */,
 				06F0BAFE178F01C800183A4C /* Accounts.framework */,
 				06F0BAC3178F005D00183A4C /* Careel */,
+				064D64201797719000BF2365 /* Vendor */,
 				06F0BAEA178F005D00183A4C /* CareelTests */,
 				06F0BABC178F005D00183A4C /* Frameworks */,
 				06F0BABB178F005D00183A4C /* Products */,
@@ -285,11 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064D643F179775B600BF2365 /* TWSignedRequest.m in Sources */,
 				06F0BB00178F021900183A4C /* LoginViewController.m in Sources */,
 				06F0BACA178F005D00183A4C /* main.m in Sources */,
 				06F0BACE178F005D00183A4C /* AppDelegate.m in Sources */,
 				06F0BADA178F005D00183A4C /* MasterViewController.m in Sources */,
 				06F0BADD178F005D00183A4C /* DetailViewController.m in Sources */,
+				064D6435179772B500BF2365 /* NSData+Base64.m in Sources */,
+				064D6437179772B500BF2365 /* OAuth+Additions.m in Sources */,
+				064D6439179772B500BF2365 /* OAuthCore.m in Sources */,
+				064D643D179774B700BF2365 /* TWAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +367,11 @@
 			files = (
 				06F0BAF2178F005D00183A4C /* CareelTests.m in Sources */,
 				06F0BAFD178F006B00183A4C /* LoginViewController.m in Sources */,
+				064D6424179771C100BF2365 /* TWSignedRequest.m in Sources */,
+				064D6436179772B500BF2365 /* NSData+Base64.m in Sources */,
+				064D6438179772B500BF2365 /* OAuth+Additions.m in Sources */,
+				064D643A179772B500BF2365 /* OAuthCore.m in Sources */,
+				064D643E179774B700BF2365 /* TWAPIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +544,7 @@
 				06F0BAF7178F005D00183A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06F0BAF8178F005D00183A4C /* Build configuration list for PBXNativeTarget "CareelTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +553,7 @@
 				06F0BAFA178F005D00183A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
