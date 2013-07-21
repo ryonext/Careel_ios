@@ -12,6 +12,7 @@
 #import "OAuth+Additions.h"
 #import "TWAPIManager.h"
 #import "TWSignedRequest.h"
+#import "AFNetworking.h"
 
 #define ERROR_TITLE_MSG @"Whoa, there cowboy"
 #define ERROR_NO_ACCOUNTS @"You must add a Twitter account in Settings.app to use this demo."
@@ -57,19 +58,22 @@
     NSLog(@"press");
     
     // Twitterアカウントを取得する
-    
+//    [self refreshTwitterAccounts];
     // Ca:REELサーバーにPOSTする
+
     
-//    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
-//    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-//    [accountStore requestAccessToAccountsWithType:accountType options:nil completion:<#^(BOOL granted, NSError *error)completion#>]{
-//        if(granted){
-//            NSArray *accountArray = [accountStore accountWithAccountType:accountType];
-//            if(accountArray.count > 0){
-//                
-//            }
-//        }
-//    }
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/login.json"];
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://localhost:3000"]];
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
+                                                            path:@"http://localhost:3000/login.json"
+                                                      parameters:nil];
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        // JSON変数はNSDictionaryかNSArrayにパース済み
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        
+    }];
+    [operation start];
 }
 
 /**
@@ -100,6 +104,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (granted) {
 //                    _reverseAuthBtn.enabled = YES;
+                    NSLog(@"hoeg");
                 }
                 else {
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:ERROR_TITLE_MSG message:ERROR_PERM_ACCESS delegate:nil cancelButtonTitle:ERROR_OK otherButtonTitles:nil];
