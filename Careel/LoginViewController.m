@@ -64,14 +64,20 @@
     
     NSURL *url = [NSURL URLWithString:@"http://localhost:3000/login.json"];
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://localhost:3000"]];
+ 
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"twitter_id",  nil];
+    
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
                                                             path:@"http://localhost:3000/login.json"
-                                                      parameters:nil];
+                                                      parameters:parameters];
+    
+    
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         // JSON変数はNSDictionaryかNSArrayにパース済み
+        NSLog(@"success");
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        
+        NSLog(@"error");
     }];
     [operation start];
 }
