@@ -75,7 +75,9 @@
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         // JSON変数はNSDictionaryかNSArrayにパース済み
+        NSDictionary *json = (NSDictionary*)JSON;
         NSLog(@"success");
+        [self performSegueWithIdentifier:@"loginSuccess" sender:self];
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         NSLog(@"error");
     }];
